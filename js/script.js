@@ -16,9 +16,9 @@ const student = {
 }
 
 //  [x] Stampare a schermo attraverso un ciclo for-in tutte le proprietà dell'oggetto.
-for(let key in student) {
-    console.log(student[key]);
-}
+// for(let key in student) {
+//     console.log(student[key]);
+// }
 
 // [x] Creare un array di oggetti di studenti.
 const studenti =
@@ -46,36 +46,37 @@ const studenti =
 // console.log(studenti);
 
 // [x] Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
-
-for(let key in studenti){
-console.log(studenti[key].nome);
-console.log(studenti[key].cognome)
+for (let i= 0 ; i < studenti.length; i++) {
+    
+    console.log(studenti[i].nome);
+    console.log(studenti[i].cognome);
+    
 }
 
 // [x] Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo
 // oggetto studente inserendo nell’ordine: nome, cognome e età.
 
 // dichiaro variabili da inserire dentro oggetto
-let newNome;
-let newCognome;
-let newAge;
+// let newNome;
+// let newCognome;
+// let newAge;
 
     // avviso l'utente per l'inserimento dati nuovo studente
-    alert('inserisci un nuovo studente')
+//     alert('inserisci un nuovo studente')
 
-    let thisNewNome = prompt('inserisci il nome');
+//     let thisNewNome = prompt('inserisci il nome');
     
-    let thisNewCognome = prompt('inserisci il cognome ');
+//     let thisNewCognome = prompt('inserisci il cognome ');
     
-    let thisNewAge = prompt("inserisci l'eta");
-    // nuovo oggetto
-    const newStudent = {
-        nome: thisNewNome,
-        cognome: thisNewCognome,
-        eta: thisNewAge
-    }
-    // pusho nuovo oggetto dentro array studenti
-    studenti.push(newStudent)
-// stampo array per controllo inserimento nuovo oggetto
-console.log(studenti)
+//     let thisNewAge = prompt("inserisci l'eta");
+//     // nuovo oggetto
+//     const newStudent = {
+//         nome: thisNewNome,
+//         cognome: thisNewCognome,
+//         eta: thisNewAge
+//     }
+//     // pusho nuovo oggetto dentro array studenti
+//     studenti.push(newStudent)
+// // stampo array per controllo inserimento nuovo oggetto
+// console.log(studenti)
 
